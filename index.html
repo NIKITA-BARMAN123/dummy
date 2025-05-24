@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Paradise</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            background-color: #ff7043;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .intro p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .box-model {
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <b>Food Paradise</b></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Food Paradise</strong>, your ultimate destination for exquisite cuisines from around the globe. Our dishes are prepared with <em>love</em> and <i>passion</i>. We take pride in serving quality food to make your day special.
+            </p>
+            <marquee>Check out our new menu items!</marquee>
+        </div>
+
+        <div class="grid">
+            <img src="Pepperoni-Pizza-1-500x500.jpg" alt="Delicious Dish" height="200px">
+            <img src="red-sauce-pasta-1.jpg" alt="Tasty Meal" height="200px">
+            <img src="103983255-GettyImages-520215281.jpg" alt="Gourmet Food" height="200px">
+        </div>
+
+        <h2 id="menu">Our Menu</h2>
+        <table border="1" style="width: 100%; text-align: center; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza</td>
+                    <td>Cheesy pizza topped with fresh ingredients</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>Juicy beef patty with crispy fries</td>
+                    <td>$9.99</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>Classic Italian pasta with creamy sauce</td>
+                    <td>$14.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="about">Gallery</h2>
+        <div class="box-model">
+            <p>Explore the delightful dishes in our gallery.</p>
+            <div class="flex">
+                <img src="gallery1.jpg" alt="Dish 1" style="width: 30%;">
+                <img src="gallery2.jpg" alt="Dish 2" style="width: 30%;">
+                <img src="gallery3.jpg" alt="Dish 3" style="width: 30%;">
+            </div>
+        </div>
+
+        <h2>Enjoy Music While You Browse</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
+
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Watch Our Video</h2>
+        <video  width="600"  loop="50" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Paradise. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
